@@ -1,6 +1,6 @@
 from mrjob.job import MRJob
 from mrjob.step import MRStep
-
+# -*- coding: utf-8 -*-
 class count_incidents(MRJob):
     
     def mapper(self, _, line):
