@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 import re
