@@ -5,7 +5,7 @@ class count_incidents(MRJob):
     
     def mapper(self, _, line):
         try:
-            (id,satrt,end,update,status,cause,Severity,code_objet_IdFM,type_objet,station_Name _IdFM,titre_du_message,corps_du_message) = line.split(";")
+            (id,satrt,end,update,status,cause,Severity,code_objet_IdFM,type_objet,station_Name_IdFM,titre_du_message,corps_du_message) = line.split(";")
             yield (cause, titre_du_message), 1
         except:
             pass
